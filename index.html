@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="stylesheet.css" type="text/css" charset="utf-8" />
+  
+  <title>Frontend Mentor | Profile card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body { 
+      background-color: hsl(185, 75%, 39%);
+      background-image: url("./images/bg-pattern-bottom.svg"), url("./images/bg-pattern-top.svg");
+      font-family: 'kumbh_sansregular', Arial;
+      font-weight:normal;
+      font-style:normal;
+      font-size: 18px;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .card { 
+      background-image: url("./images/bg-pattern-card.svg");
+      width: 325px;
+      height: 325px;
+      margin: auto;
+      border-radius: 15px;
+    }
+    .nal {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      text-align: center;
+    }
+    .nal .age {
+      color: darkgrey
+    }
+    .nal .city {
+      color: darkgrey;
+      font-family: 'kumbh_sanslight', Arial;
+      font-size: 14px;
+    }
+    .thicc {
+      font-family: 'kumbh_sansbold', Arial;
+    }
+    .smol {
+      color: darkgrey;
+      font-family: 'kumbh_sanslight', Arial;
+      font-size: 12px;
+    }
+    .stats {
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+    }
+    .substats {
+      flex-direction: column;
+    }
+  </style>
+</head>
+<body>
+  <div class=card>
+    <div class=nal>
+      <span><span class=thicc>Victor Crest</span>
+      <span class=age>26</span></span>
+      <div class=city>London</div>
+    </div>
+
+    <hr>
+
+    <div class=stats>
+      <div class=substats>
+        <div class=thicc>80K</div>
+        <div class=smol>Followers</div>
+      </div>
+
+      <div class=substats>
+        <div class=thicc>803K</div>
+        <div class=smol>Likes</div>
+      </div>
+
+      <div class=substats>
+        <div class=thicc>1.4K</div>
+        <div class=smol>Photos</div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Adric Burks</a>.
+  </div>
+</body>
+</html>
